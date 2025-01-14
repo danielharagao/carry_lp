@@ -92,7 +92,7 @@
   .hero {
     background: linear-gradient(135deg, rgba(36, 0, 70, 0.95), rgba(63, 55, 201, 0.9)),
                 url("hero-placeholder.jpg") no-repeat center/cover;
-    min-height: 90vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
