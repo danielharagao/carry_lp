@@ -138,7 +138,8 @@
     font-weight: 400;
   }
   
-  .hero button {
+  /* Hero button/link styling */
+  .hero-button {
     padding: 1.2rem 3rem;
     font-size: 1.2rem;
     font-weight: 600;
@@ -151,9 +152,11 @@
     box-shadow: 0 4px 15px var(--shadow-color);
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    display: inline-block;
   }
   
-  .hero button::before {
+  .hero-button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -164,13 +167,29 @@
     transition: left 0.7s ease;
   }
   
-  .hero button:hover {
+  .hero-button:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 20px rgba(76, 201, 240, 0.4);
   }
   
-  .hero button:hover::before {
+  .hero-button:hover::before {
     left: 100%;
+  }
+  
+  /* WhatsApp icon for hero button */
+  .hero-button::after {
+    content: '💬';
+    margin-left: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+  }
+  
+  /* Responsive adjustments for hero button */
+  @media (max-width: 768px) {
+    .hero-button {
+      padding: 1rem 2.5rem;
+      font-size: 1.1rem;
+    }
   }
   
   main {
