@@ -396,11 +396,6 @@
     color: var(--primary);
   }
   
-  .faq .answer {
-    display: none;
-    margin-bottom: 1rem;
-  }
-  
   /* CTA Final */
   .cta-final {
     background: var(--gradient-1);
