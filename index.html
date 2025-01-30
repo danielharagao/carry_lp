@@ -19,204 +19,6 @@
   
   <!-- Referência para o CSS Externo -->
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Stripe Pricing Table Script -->
-  <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
-  
-  <!-- Add these styles -->
-  <style>
-    .pricing-section {
-      padding: 4rem 0;
-      overflow: hidden;
-    }
-    
-    .pricing-subtitle {
-      text-align: center;
-      font-size: 1.2rem;
-      margin-bottom: 3rem;
-      color: #666;
-    }
-
-    .pricing-cards {
-      display: flex;
-      justify-content: center;
-      gap: 3rem;
-      max-width: 1100px;
-      margin: 3rem auto;
-      padding: 0 2rem;
-    }
-
-    .pricing-card {
-      background: white;
-      border-radius: 12px;
-      padding: 2.5rem;
-      width: 380px;
-      min-height: 580px;
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      transition: transform 0.3s ease;
-    }
-
-    .pricing-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .pricing-card.featured {
-      background: linear-gradient(145deg, #ffffff, #fff8f3);
-      border: 2px solid #ff6b00;
-      transform: scale(1.05);
-    }
-
-    .featured-badge {
-      position: absolute;
-      top: -15px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: #ff6b00;
-      color: white;
-      padding: 8px 24px;
-      border-radius: 20px;
-      font-weight: 600;
-      font-size: 0.9rem;
-    }
-
-    .card-header {
-      text-align: center;
-      padding-bottom: 2rem;
-      margin-bottom: 2rem;
-      border-bottom: 1px solid #eee;
-    }
-
-    .card-header h3 {
-      font-size: 1.75rem;
-      font-weight: 700;
-      color: #333;
-      margin-bottom: 1.5rem;
-    }
-
-    .price {
-      display: flex;
-      align-items: baseline;
-      justify-content: center;
-      gap: 0.5rem;
-      margin: 1rem 0;
-    }
-
-    .currency {
-      font-size: 1.5rem;
-      font-weight: 600;
-    }
-
-    .amount {
-      font-size: 3.5rem;
-      font-weight: 700;
-      line-height: 1;
-    }
-
-    .period {
-      color: #666;
-      font-size: 1rem;
-    }
-
-    .savings {
-      color: #ff6b00;
-      font-weight: 600;
-      margin-top: 0.5rem;
-    }
-
-    .features-list {
-      flex-grow: 1;
-      list-style: none;
-      padding: 0;
-      margin: 0 0 2.5rem 0;
-    }
-
-    .features-list li {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      padding: 1rem 0;
-      color: #666;
-      font-size: 1.1rem;
-      line-height: 1.4;
-    }
-
-    .check {
-      color: #ff6b00;
-      font-weight: bold;
-    }
-
-    .card-button {
-      margin-top: auto;
-      display: block;
-      background: #ff6b00;
-      color: white;
-      text-align: center;
-      padding: 1.25rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1.1rem;
-      transition: all 0.3s ease;
-    }
-
-    .card-button:hover {
-      background: #e65c00;
-      transform: translateY(-2px);
-      color: white;
-      text-decoration: none;
-    }
-
-    .card-button.featured {
-      background: #ff6b00;
-      box-shadow: 0 4px 12px rgba(255, 107, 0, 0.2);
-    }
-
-    .card-button.featured:hover {
-      background: #e65c00;
-      transform: translateY(-2px);
-      color: white;
-      text-decoration: none;
-    }
-
-    /* Responsive adjustments */
-    @media (max-width: 1024px) {
-      .pricing-cards {
-        gap: 2rem;
-        padding: 0 1.5rem;
-      }
-
-      .pricing-card {
-        width: 340px;
-        padding: 2rem;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .pricing-cards {
-        flex-direction: column;
-        align-items: center;
-        gap: 3rem;
-      }
-
-      .pricing-card {
-        width: 100%;
-        max-width: 380px;
-        min-height: auto;
-      }
-
-      .pricing-card.featured {
-        transform: none;
-        order: -1;
-      }
-
-      .pricing-card.featured:hover {
-        transform: translateY(-5px);
-      }
-    }
-  </style>
 </head>
 <body>
 
@@ -414,9 +216,9 @@
               </li>
             </ul>
             
-            <a href="https://buy.stripe.com/3cseWUdox7Mp2rudQR" class="card-button">
+            <button onclick="window.location.href='https://buy.stripe.com/3cseWUdox7Mp2rudQR'" class="card-button">
               Começar Agora
-            </a>
+            </button>
           </div>
 
           <!-- Quarterly Plan (Featured) -->
@@ -451,9 +253,9 @@
               </li>
             </ul>
             
-            <a href="https://buy.stripe.com/bIY9CA84d3w90jm7ss" class="card-button featured">
+            <button onclick="window.location.href='https://buy.stripe.com/bIY9CA84d3w90jm7ss'" class="card-button featured">
               Melhor Valor!
-            </a>
+            </button>
           </div>
         </div>
       </div>
