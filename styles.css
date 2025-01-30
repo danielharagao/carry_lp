@@ -1,6 +1,6 @@
 /* Color Variables */
 :root {
-  --primary: #4361ee;
+  --primary: #1A3C40;
   --primary-light: #4895ef;
   --secondary: #3f37c9;
   --accent: #4cc9f0;
@@ -52,6 +52,7 @@
     text-decoration: none;
     background: var(--gradient-1);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   
