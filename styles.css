@@ -1238,3 +1238,43 @@
     }
   }
   
+  .pricing-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .features-list {
+    margin-bottom: 3rem;
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .price-display {
+    margin: 3rem 0;
+  }
+  
+  .price-main {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #90EE90;
+  }
+  
+  .price-secondary {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #ffffff;
+  }
+  
+  .button-container {
+    margin: 2rem 0;
+  }
+  
+  /* Stripe button customization if needed */
+  stripe-buy-button {
+    --button-height: 50px;
+    --button-width: 300px;
+    --button-border-radius: 8px;
+    --button-font-size: 1.2rem;
+  }
+  
