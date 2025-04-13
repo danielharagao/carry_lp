@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="VendaFácil - Planos e preços para automatizar sua prospecção e aumentar suas vendas.">
+  <meta name="keywords" content="Automação de Vendas, Prospecção Automática, Geração de Leads, WhatsApp Marketing, Inteligência Artificial, Escalar Negócios">
+  <meta name="author" content="VendaFácil">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos | VendaFácil</title>
+  <link rel="icon" href="public/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .pricing-section {
+      padding: 6rem 2rem;
+      background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    }
+    
+    .pricing-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+    
+    .pricing-card {
+      background: white;
+      padding: 3rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .pricing-card:hover {
+      transform: translateY(-10px);
+    }
+    
+    .pricing-card.popular {
+      border: 2px solid #4cc9f0;
+    }
+    
+    .popular-tag {
+      position: absolute;
+      top: 20px;
+      right: -35px;
+      background: #4cc9f0;
+      color: white;
+      padding: 8px 40px;
+      transform: rotate(45deg);
+      font-size: 0.8rem;
+      font-weight: bold;
+    }
+    
+    .plan-name {
+      font-size: 1.5rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+    
+    .plan-price {
+      font-size: 3rem;
+      color: #1A3C40;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    
+    .plan-price small {
+      font-size: 1rem;
+      color: #666;
+    }
+    
+    .plan-users {
+      color: #666;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+    
+    .plan-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem;
+      text-align: left;
+    }
+    
+    .plan-features li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+      position: relative;
+      color: #666;
+    }
+    
+    .plan-features li::before {
+      content: "✓";
+      color: #4cc9f0;
+      position: absolute;
+      left: 0;
+      font-weight: bold;
+    }
+    
+    .cta-button {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background: #4cc9f0;
+      color: white;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      margin: 0.5rem;
+    }
+    
+    .cta-button:hover {
+      background: #3ab8df;
+      transform: translateY(-2px);
+    }
+
+    .cta-button.secondary {
+      background: transparent;
+      border: 2px solid #4cc9f0;
+      color: #4cc9f0;
+    }
+
+    .cta-button.secondary:hover {
+      background: rgba(76, 201, 240, 0.1);
+    }
+
+    .cta-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .hero-planos {
+      background: linear-gradient(135deg, rgba(36, 0, 70, 0.95), rgba(63, 55, 201, 0.9));
+      padding: 8rem 2rem 4rem;
+      text-align: center;
+      color: white;
+    }
+
+    .hero-planos h1 {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-planos p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+
+    .savings-tag {
+      background: #4cc9f0;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">VendaFácil</a>
+      <div class="nav-links">
+        <a href="recursos.html">Recursos</a>
+        <a href="planos.html" class="active">Planos</a>
+        <a href="dicas.html">Dicas</a>
+        <a href="index.html">Carreira</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-planos">
+    <h1>Escolha o Plano Ideal</h1>
+    <p>Comece a prospectar de forma inteligente hoje mesmo</p>
+  </header>
+
+  <main class="pricing-section">
+    <div class="pricing-container">
+      <!-- Individual Plan -->
+      <div class="pricing-card">
+        <h2 class="plan-name">Individual</h2>
+        <div class="plan-price">R$147<small>/mês</small></div>
+        <div class="plan-users">1 usuário</div>
+        <ul class="plan-features">
+          <li>Prospecção ilimitada</li>
+          <li>Integração com WhatsApp</li>
+          <li>Automação de mensagens</li>
+          <li>Gestão de leads</li>
+          <li>Suporte prioritário</li>
+        </ul>
+        <div class="cta-container">
+          <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+          <stripe-buy-button
+            buy-button-id="buy_btn_1R57S7CoZTeC5nOajlbuLwbz" 
+            publishable-key="pk_live_51QmliPCoZTeC5nOaRVLxFNhtUYjsp9FOt6DeIuewyGBdLBSsdzO2x8KlAyEymA8U1mthbPV4na3BW1406AdH80uL00kKSb8GcO" 
+          ></stripe-buy-button>
+          <a href="https://wa.me/5519996298141?text=Olá! Gostaria de saber mais sobre o plano para times pequenos do VendaFácil" class="cta-button secondary">Agendar Reunião</a>
+        </div>
+      </div>
+
+      <!-- Small Team Plan -->
+      <div class="pricing-card popular">
+        <div class="popular-tag">MAIS POPULAR</div>
+        <h2 class="plan-name">Time Pequeno</h2>
+        <div class="savings-tag">Economia de 34%</div>
+        <div class="plan-price">R$97<small>/usuário/mês</small></div>
+        <div class="plan-users">2 a 5 usuários</div>
+        <ul class="plan-features">
+          <li>Tudo do plano Individual</li>
+          <li>Gestão de equipe</li>
+          <li>Relatórios avançados</li>
+          <li>Treinamento personalizado</li>
+          <li>API disponível</li>
+        </ul>
+        <a href="https://wa.me/5519996298141?text=Olá! Gostaria de saber mais sobre o plano para times pequenos do VendaFácil" class="cta-button">Falar com Consultor</a>
+      </div>
+
+      <!-- Enterprise Plan -->
+      <div class="pricing-card">
+        <h2 class="plan-name">Empresarial</h2>
+        <div class="savings-tag">Economia de 41%</div>
+        <div class="plan-price">R$87<small>/usuário/mês</small></div>
+        <div class="plan-users">5+ usuários</div>
+        <ul class="plan-features">
+          <li>Tudo do plano Time Pequeno</li>
+          <li>Onboarding dedicado</li>
+          <li>Gerente de conta</li>
+          <li>SLA garantido</li>
+          <li>Customizações especiais</li>
+        </ul>
+        <a href="https://wa.me/5519996298141?text=Olá! Gostaria de saber mais sobre o plano empresarial do VendaFácil" class="cta-button">Falar com Consultor</a>
+      </div>
+    </div>
+  </main>
+
+  <footer style="background-color: #000; color: #fff; padding: 2rem; font-family: sans-serif;">
+    <div class="footer-container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <!-- Left Column: Menu Links -->
+      <div class="footer-column" style="flex: 1 1 200px; margin: 0 1rem;">
+        <h3 style="margin-bottom: 1rem;">Sistema VendaFácil</h3>
+        <ul style="list-style: none; padding: 0; margin: 0;">
+          <li style="margin-bottom: 0.5rem;">
+            <a href="planos.html" style="color: #fff; text-decoration: none;">Planos</a>
+          </li>
+          <li style="margin-bottom: 0.5rem;">
+            <a href="recursos.html" style="color: #fff; text-decoration: none;">Recursos</a>
+          </li>
+          <li style="margin-bottom: 0.5rem;">
+            <a href="dicas.html" style="color: #fff; text-decoration: none;">Dicas</a>
+          </li>
+          <li style="margin-bottom: 0.5rem;">
+            <a href="https://frontcarry-production.up.railway.app/" style="color: #fff; text-decoration: none;">Login</a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Middle Column: Address -->
+      <div class="footer-column" style="flex: 1 1 200px; margin: 0 1rem;">
+        <h3 style="margin-bottom: 1rem;">Endereço</h3>
+        <address style="font-style: normal;">
+          Rua Santa Cruz, 215 - Sala 12<br>
+          Centro - Limeira<br>
+          SP – Brasil – CEP 13480-000
+        </address>
+      </div>
+      
+      <!-- Middle Column: Social Media -->
+      <div class="footer-column" style="flex: 1 1 200px; margin: 0 1rem;">
+        <h3 style="margin-bottom: 1rem;">Siga nas redes sociais</h3>
+        <div style="display: flex; gap: 1rem;">
+          <a href="https://facebook.com" style="color: #fff; font-size: 1.5rem;" target="_blank">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="https://instagram.com" style="color: #fff; font-size: 1.5rem;" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://linkedin.com" style="color: #fff; font-size: 1.5rem;" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://youtube.com" style="color: #fff; font-size: 1.5rem;" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Right Column: Contact/Support -->
+      <div class="footer-column" style="flex: 1 1 200px; margin: 0 1rem;">
+        <h3 style="margin-bottom: 1rem;">Atendimento</h3>
+        <p>
+          Segunda à Sexta das 9h às 18h<br>
+          (19) 99629-8141
+        </p>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar: Copyright -->
+    <div class="footer-bottom" style="text-align: center; margin-top: 2rem;">
+      <p>2024 © Sistema VendaFácil - Todos os direitos reservados</p>
+      <p>
+        <a href="#termos" style="color: #fff; text-decoration: none; margin-right: 0.5rem;">Termos de uso</a> | 
+        <a href="#politicas" style="color: #fff; text-decoration: none; margin-left: 0.5rem;">Políticas de privacidade</a>
+      </p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5519996298141" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</body>
+</html> 
